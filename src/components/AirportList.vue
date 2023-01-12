@@ -1,0 +1,41 @@
+<template>
+  <div class="airport">
+       <h4>Airports in US</h4>
+        <p>{{airport.name}}</p>
+        <p>{{airport.city}}</p>
+  </div>
+</template>
+
+<script>
+export default {
+    
+    name: 'AirportList',
+    props: {
+        airport: {
+            type: Object
+        }
+    }
+
+}
+</script>
+
+<style scoped>
+.airport {
+  border: 3px solid;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.airport p:first-child {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.airport p:last-child {
+  font-style: italic;
+  font-size: .8rem;
+}
+
+</style>
