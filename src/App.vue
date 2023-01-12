@@ -20,7 +20,7 @@ export default {
   },
   setup(){
       const airports = ref(AllAirportJson)
-      return {airports }
+      return { airports }
   }
 }
 </script>

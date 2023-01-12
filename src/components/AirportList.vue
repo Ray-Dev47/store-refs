@@ -1,21 +1,19 @@
 <template>
   <div class="airport">
-       <h4>Airports in US</h4>
-        <p>{{airport.name}}</p>
-        <p>{{airport.city}}</p>
+     <p>{{ airport.abbreviation }}</p>
+    <p>{{ airport.name }}</p>
+    <p>{{ airport.city }}, {{ airport.state }}</p>
   </div>
 </template>
 
 <script>
-export default {
-    
+export default {   
     name: 'AirportList',
     props: {
         airport: {
             type: Object
         }
     }
-
 }
 </script>
 
